@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+:root {
+  --primary-color: #d5e1ef;
+  --secondary-color: #ffffff;
+  --ternary-color: #182842;
+  --cuartery-color: #949ba5;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("./Outfit/Outfit-VariableFont_wght.ttf");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Outfit-Bold";
+  src: url("./Outfit/static/Outfit-Bold.ttf");
+  font-style: normal;
+}
+body {
+  background-color: var(--primary-color);
+  font-family: "Outfit", sans-serif;
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+.card {
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  min-width: 230px;
+  width: 80%;
+  max-width: 400px;
+  max-height: 800px;
+  overflow: hidden;
+  border-radius: 2ch;
+  text-align: center;
+}
+.image-container {
+  display: flex;
+  flex: 1;
+  padding: 2ch;
+}
+.image {
+  width: 100%;
+  border-radius: 1ch;
+}
+.paragraph .bold {
+  font-family: "Outfit-Bold", sans-serif;
+}
+.paragraph {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 2ch 2ch 6ch 2ch;
+  row-gap: 1ch;
+}
